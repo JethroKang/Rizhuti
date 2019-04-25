@@ -1587,7 +1587,7 @@ function tpl_emailPay($order_num, $order_name, $order_price, $pay_type, $a_href)
 {
     $html = '<div style="background-color:#eef2fa;border:1px solid #d8e3e8;color: #111;padding:0 15px;-moz-border-radius:5px;-webkit-border-radius:5px;-khtml-border-radius:5px;">';
     $html .= '<p style="font-weight: bold;color: #2196F3;">您的订单信息：</p>';
-    $html .= sprintf("<p>订单号: 190218110152153372872</p>", $order_num);
+    $html .= sprintf("<p>订单号: %s </p>", $order_num);
     $html .= sprintf("<p>商品名称: %s</p>", $order_name);
     $html .= sprintf("<p>付款金额: %s</p>", $order_price);
     $html .= sprintf("<p>支付方式: %s</p>", $pay_type);
